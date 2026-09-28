@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>BancoDistribuido.Application</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- 12.5.0: última versión de MediatR con licencia Apache 2.0 (la 13+ requiere licencia comercial) -->
+    <PackageReference Include="MediatR" Version="12.5.0" />
+    <PackageReference Include="FluentValidation" Version="12.0.0" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="12.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\BancoDistribuido.Domain.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <RootNamespace>BancoDistribuido.Api</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Application\BancoDistribuido.Application.csproj" />
+    <ProjectReference Include="..\Infrastructure\BancoDistribuido.Infrastructure.csproj" />
+  </ItemGroup>
+</Project>
