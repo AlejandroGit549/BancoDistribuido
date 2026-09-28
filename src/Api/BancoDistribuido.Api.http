@@ -1,16 +1,16 @@
 @host = http://localhost:5080
 
 ### 1. Crear cuenta
-POST {{host}}/clientes/1/cuentas
+POST {{host}}/clientes/2/cuentas
 Content-Type: application/json
 
 {
-  "TipoCuenta": "Ahorro",
-  "EstadoCuenta": "Activa"
-}
+ "TipoCuenta": "Ahorro",
+ "EstadoCuenta": "Activa"
+ }
 
 ### 2. Registrar transacción (Idempotency-Key y X-Referencia son opcionales)
-POST {{host}}/cuentas/100000000/transacciones
+POST {{host}}/cuentas/2/transacciones
 Content-Type: application/json
 Idempotency-Key: 3f2b8c1e-7a4d-4e5f-9b21-0c6d8e9a1b23
 
